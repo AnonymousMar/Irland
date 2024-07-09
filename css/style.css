@@ -16,7 +16,9 @@
     --orange: #F2943D;
     --orange2:#b86400;
 }
-
+body {
+    margin: 0;
+}
 header {
     display: flex;
     justify-content: space-between;
