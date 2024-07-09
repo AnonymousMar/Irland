@@ -126,6 +126,17 @@ img {
     position: absolute;
     right: 0;
 }
+.fa-solid {
+    color: var(--while-color);
+}
+
+.fa-instagram {
+    color: var(--while-color);
+}
+
+.fa-tiktok {
+    color: var(--while-color);
+}
 /*.menu-item {
     display: block;
     padding: 15px;
@@ -608,13 +619,3 @@ footer {
     color: var(--title-color);
 }
 
-
-.fa-solid{
-    color: var(--while-color);
-}
-.fa-instagram{
-    color: var(--while-color);
-}
-.fa-tiktok{
-    color: var(--while-color);
-}
