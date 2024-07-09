@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irland</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/tabletstyle.css">
+    <link rel="stylesheet" href="./css/mobilestyle.css">
+        <link rel="stylesheet" href="./css/desktop-style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ffd3309126.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,44 +22,79 @@
    <main>
     <header class="header">
             <div class="logo"> <span class="span1">I</span>rland</div>
+            <select class="select" name="language" id="language">
+                <option value="de">German</option>
+                <option value="en">English</option>
+            </select>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="leinster.html">Leinster</a></li>
-                    <li><a href="munster.html">Munster</a></li>
-                    <li><a href="connacht.html">Connacht</a></li>
-                    <li><a href="ulster.html">Ulster</a></li>
-                    <li><a href="fotogalerie.html">Fotogalerie</a></li>
+                    <li><a  href="leinster.html" class="lang " key="leinster" >Leinster</a></li>
+                    <li>  <a href="munster.html" class="lang" key="munster">Munster</a></li>
+                    <li><a href="connacht.html" class="lang" key="connacht">Connacht</a></li>
+                    <li><a  href="ulster.html" class="lang" key="ulster">Ulster</a></li>
+                    <li><a  href="fotogalerie.html" class="lang" key="fotogalerie">Fotogalerie</a></li>
                 </ul>
             </nav>
+            <button type="button" class="menu-open" data-menu-open>
+                <svg class="menu-svg" width="32" height="22">
+                    <use href="./images/menu-svgrepo-com.svg"></use>
+                </svg>
+            </button>
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="container">
+                    <div>
+                        <button type="button" class="menu-close" data-menu-close>
+                            <svg class="icon-a" width="8" height="8">
+                                <use href="./images/close-circle-svgrepo-com.svg"></use>
+                            </svg>
+                        </button>
+                        <ul class=" mob-menu-list list ">
+                            <li class="mob-menu-item list">
+                                <a class="mob-menu-link5 link" href="munster.html"> Munster</a>
+                            </li>
+                            <li class="mob-menu-item list">
+                                <a class="mob-menu-link5 link" href="leinster.html"> Leinster</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link" href="connacht.html">Connacht</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link" href="ulster.html">Ulster</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link link2" href="fotogalerie.html">Fotogalerie</a>
+                            </li>
+                        </ul>
+                    </div>
     </header>
    <section class="sol">
     <div class="container"></div>
    </section>
    <section>
    <div class="container box">
-        <p class="text-irland lineUp">Willkommen in Irland,</p>
-        <p class="text-irland-1">einem Land, das mit seiner atemberaubenden Natur, reichen Geschichte und lebendigen Kultur die Herzen von Reisenden
+        <p class="text-irland lineUp" id="text1" key="select">Willkommen in Irland,</p>
+        <p class="text-irland-1"  id="text2" key="text1">einem Land, das mit seiner atemberaubenden Natur, reichen Geschichte und lebendigen Kultur die Herzen von Reisenden
         weltweit erobert. Irland, die grüne Insel, fasziniert durch ihre malerischen Landschaften, von den majestätischen
         Klippen von Moher bis zu den sanften Hügeln der Wicklow Mountains. Hier finden Sie nicht nur unberührte Natur, sondern
         auch eine Fülle an historischen Stätten, die von der bewegten Geschichte des Landes erzählen.</p>
-        <p class="text-irland-1">Die Beliebtheit Irlands als Reiseziel ist ungebrochen und das aus gutem Grund. Jahr für Jahr strömen Millionen von
+        <p class="text-irland-1" id="text3" key="text2">Die Beliebtheit Irlands als Reiseziel ist ungebrochen und das aus gutem Grund. Jahr für Jahr strömen Millionen von
         Touristen aus aller Welt auf die Insel, um ihre vielen Facetten zu entdecken. Die lebhafte Hauptstadt Dublin, mit ihrer
         Mischung aus modernem Flair und traditionellem Charme, bietet eine Fülle an kulturellen und kulinarischen Erlebnissen.
         Genießen Sie ein Pint Guinness in einem der historischen Pubs, besuchen Sie das Trinity College und bewundern Sie das
         berühmte Book of Kells oder schlendern Sie durch die verwinkelten Gassen des Temple Bar Viertels.</p>
-        <p class="text-irland-1">Doch Irland hat weit mehr zu bieten als nur seine Städte. Die landschaftliche Vielfalt ist überwältigend: kilometerlange
+        <p class="text-irland-1" id="text4" key="text3">Doch Irland hat weit mehr zu bieten als nur seine Städte. Die landschaftliche Vielfalt ist überwältigend: kilometerlange
         Küsten, die zum Wandern und Entdecken einladen, mystische Seen und tiefe Wälder, die zum Verweilen und Erholen einladen.
         Erleben Sie die raue Schönheit des Wild Atlantic Way oder lassen Sie sich von der Ruhe des Shannon-Flusses treiben. Für
         Abenteurer gibt es zahlreiche Aktivitäten wie Surfen, Wandern oder Reiten, während Kulturinteressierte die vielen
         Schlösser, Burgen und Ruinen erkunden können, die überall auf der Insel verstreut sind.</p>
-        <p class="text-irland-1">Ein weiterer Grund für die Beliebtheit Irlands ist die herzliche Gastfreundschaft seiner Einwohner. Die Iren sind
+        <p class="text-irland-1" id="text5" key="text4">Ein weiterer Grund für die Beliebtheit Irlands ist die herzliche Gastfreundschaft seiner Einwohner. Die Iren sind
         bekannt für ihre Freundlichkeit und Offenheit, was jeder Besucher sofort spürt. Egal, ob Sie in einem gemütlichen Bed &
         Breakfast übernachten oder in einem luxuriösen Hotel, Sie werden sich stets willkommen fühlen. Die lebendige Musikszene,
         von traditionellen irischen Klängen bis hin zu modernen Beats, sorgt dafür, dass es immer etwas zu erleben gibt.</p>
-        <p class="text-irland-1">Nicht zu vergessen ist die irische Küche, die weit mehr zu bieten hat als nur Kartoffeln und Kohl. Probieren Sie frische
+        <p class="text-irland-1" id="text6" key="text5">Nicht zu vergessen ist die irische Küche, die weit mehr zu bieten hat als nur Kartoffeln und Kohl. Probieren Sie frische
         Meeresfrüchte, herzhafte Eintöpfe und natürlich das berühmte Irish Breakfast. Viele Pubs und Restaurants bieten lokale
         Spezialitäten und nutzen frische, regionale Zutaten, um Ihnen ein authentisches Geschmackserlebnis zu bieten.</p>
-        <p class="text-irland-1">Irland ist ein Land, das Sie mit seiner Schönheit, Kultur und Herzlichkeit verzaubern wird. Es ist ein Ort, an dem
+        <p class="text-irland-1" id="text7" key="text6">Irland ist ein Land, das Sie mit seiner Schönheit, Kultur und Herzlichkeit verzaubern wird. Es ist ein Ort, an dem
         Geschichte und Moderne harmonisch aufeinandertreffen und der sowohl Ruhe als auch Abenteuer bietet. Planen Sie noch
         heute Ihre Reise nach Irland und entdecken Sie selbst, warum dieses Land so viele Menschen in seinen Bann zieht. Lassen
         Sie sich von der Magie der grünen Insel verführen und erleben Sie unvergessliche Momente, die Sie ein Leben lang
@@ -93,7 +134,7 @@
             </div>
             <div class="subscription">
                 <input type="email" placeholder="E-mail" id="emailInput">
-                <button class="button-s" id="subscribeButton">Abonnieren
+                <button class="button-s" id="subscribeButton" key="btn">Abonnieren
                     <svg class=" icon-send" width="24" height="20">
                         <use href="./svgimages/symbol-defs.svg"></use>
                     </svg>
@@ -101,7 +142,12 @@
             </div>
         </div>
     </footer>
-    <script src="js/input.js"></script>
+    <script src="js/main.js"></script>
+    
 </body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="./js/menu.js"></script>
 </html>

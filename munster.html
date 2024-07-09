@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Munster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/munster.css">
+    <link rel="stylesheet" href="./css/tabletstyle.css">
+    <link rel="stylesheet" href="./css/mobilestyle.css">
+    <link rel="stylesheet" href="./css/desktop-style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ffd3309126.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,38 +22,74 @@
     <main>
         <header class="header">
             <div class="logo"> <span class="span1">I</span>rland</div>
+            <select class="select" name="language" id="language">
+                <option value="de">German</option>
+                <option value="en">English</option>
+            </select>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="index.html"id="homepage" key="menu">Startseite</a></li>
                     <li><a href="leinster.html">Leinster</a></li>
                     <li><a href="connacht.html">Connacht</a></li>
                     <li><a href="ulster.html">Ulster</a></li>
                     <li><a href="fotogalerie.html">Fotogalerie</a></li>
                 </ul>
+               
             </nav>
+            <button type="button" class="menu-open" data-menu-open>
+                <svg class="menu-svg" width="32" height="22">
+                    <use href="./images/menu-svgrepo-com.svg"></use>
+                </svg>
+            </button>
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="container">
+                    <div>
+                        <button type="button" class="menu-close" data-menu-close>
+                            <svg class="icon-a" width="8" height="8">
+                                <use href="./images/close-circle-svgrepo-com.svg"></use>
+                            </svg>
+                        </button>
+                        <ul class=" mob-menu-list list ">
+                            <li class="mob-menu-item list">
+                                <a class="mob-menu-link5 link" href="index.html"> Studio</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link" href="leinster.html">Leinster</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link" href="connacht.html">Connacht</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link" href="ulster.html">Ulster</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link link2" href="fotogalerie.html">Fotogalerie</a>
+                            </li>
+                        </ul>
+                    </div>
         </header>
         <section class="sol">
             <div class="container"></div>
         </section>
         <section class="attraction">
             <div class="container">
-                <h2 class="text  ">Berühmte Sehenswürdigkeiten in Munster, Irland</h2>
+                <h2 class="text " id="h2" key="h">Berühmte Sehenswürdigkeiten in Munster, Irland</h2>
             </div>
         </section>
         <section class="container center">
-            <h2 class="lineUp">1.Blarney Castle und der Blarney Stone</h2>
+            <h2 class="lineUp" id="description" key="something">1.Blarney Castle und der Blarney Stone</h2>
             <div class="image-container ">
                 <img src="./images/College1.jpg" alt="Trinity College Library" class="right-image">
             </div>
             <div class="description">
-                <p>Blarney Castle, eine mittelalterliche Festung in der Nähe von Cork, wurde 1446 von Dermot McCarthy, dem König von
+                <p id="irland" key="text1">Blarney Castle, eine mittelalterliche Festung in der Nähe von Cork, wurde 1446 von Dermot McCarthy, dem König von
                 Munster, erbaut. Die Burg ist bekannt für den berühmten Blarney Stone, einen Kalksteinblock, der in die Zinnen des
                 Schlosses eingebaut ist.</p>
-                <p>Der Blarney Stone ist weltweit bekannt, weil er angeblich jedem, der ihn küsst, die Gabe der Beredsamkeit verleihen
+                <p id="irland1" key="text2">Der Blarney Stone ist weltweit bekannt, weil er angeblich jedem, der ihn küsst, die Gabe der Beredsamkeit verleihen
                 soll. Diese Tradition lockt jährlich Tausende von Besuchern an, die mutig den Stein küssen, indem sie sich rückwärts
                 über eine Brüstung lehnen.</p>
-                <p>Besucher können das Schloss erkunden, die wunderschönen Gärten und Anlagen genießen und natürlich den Blarney Stone küssen. Der nahegelegene Blarney Woollen Mills bietet zudem irische Souvenirs und Handwerkskunst.</p>
-                <p>Eine Legende besagt, dass der Stein ursprünglich von der irischen Göttin Clíodhna verzaubert wurde, die dem ersten
+                <p id="irland2" key="text3">Besucher können das Schloss erkunden, die wunderschönen Gärten und Anlagen genießen und natürlich den Blarney Stone küssen. Der nahegelegene Blarney Woollen Mills bietet zudem irische Souvenirs und Handwerkskunst.</p>
+                <p id="irland3" key="text4">Eine Legende besagt, dass der Stein ursprünglich von der irischen Göttin Clíodhna verzaubert wurde, die dem ersten
                 Küsser des Steins die Gabe der Überzeugungskraft verlieh, um ein Königreich zu retten.</p>
             </div>
         </section>
@@ -55,15 +99,15 @@
                 <img src="./images/Kilkenny1.jpg" alt="Kilkenny Castle" class="right-image">
             </div>
             <div class="description">
-                <p>Der Rock of Cashel, auch bekannt als Cashel of the Kings, ist eine historische Stätte in der Grafschaft Tipperary. Diese
+                <p id="irland4" key="text5">Der Rock of Cashel, auch bekannt als Cashel of the Kings, ist eine historische Stätte in der Grafschaft Tipperary. Diese
                 beeindruckende Ansammlung mittelalterlicher Gebäude, die auf einem Kalksteinhügel thronen, war einst Sitz der Könige von
                 Munster.</p>
-                <p>Der Rock of Cashel ist berühmt für seine beeindruckende Sammlung mittelalterlicher Architektur, darunter die Hochkreuze,
+                <p id="irland5" key="text6">Der Rock of Cashel ist berühmt für seine beeindruckende Sammlung mittelalterlicher Architektur, darunter die Hochkreuze,
                 die romanische Kapelle von Cormac und der runde Turm. Die Anlage bietet einen atemberaubenden Blick über die umliegende
                 Landschaft.</p>
-                <p>Besucher können die alten Ruinen erkunden, die Fresken in Cormac's Chapel bewundern und an geführten Touren teilnehmen,
+                <p id="irland6" key="text7">Besucher können die alten Ruinen erkunden, die Fresken in Cormac's Chapel bewundern und an geführten Touren teilnehmen,
                 die die reiche Geschichte und Legenden der Stätte erläutern.</p>
-                <p>Eine Legende besagt, dass der Hügel, auf dem der Rock of Cashel steht, von Satan selbst ausgespuckt wurde, als er von
+                <p id="irland7" key="text8">Eine Legende besagt, dass der Hügel, auf dem der Rock of Cashel steht, von Satan selbst ausgespuckt wurde, als er von
                 St. Patrick verjagt wurde. Dies führte zur Gründung dieser heiligen Stätte.</p>
             </div>
         </section>
@@ -73,17 +117,17 @@
                 <img src="./images/Glendalough1.jpg" alt="Glendalough" class="right-image">
             </div>
             <div class="description">
-                <p>Der Ring of Kerry ist eine berühmte Panoramastraße im County Kerry, die eine 179 Kilometer lange Schleife um die
+                <p id="irland8" key="text9">Der Ring of Kerry ist eine berühmte Panoramastraße im County Kerry, die eine 179 Kilometer lange Schleife um die
                 Iveragh-Halbinsel bildet. Diese Route bietet einige der atemberaubendsten Landschaften Irlands.</p>
-                <p>Der Ring of Kerry ist bekannt für seine spektakulären Ausblicke auf Küsten, Berge, Seen und malerische Dörfer. Es ist
+                <p id="irland9" key="text10">Der Ring of Kerry ist bekannt für seine spektakulären Ausblicke auf Küsten, Berge, Seen und malerische Dörfer. Es ist
                 eine der beliebtesten Touristenattraktionen Irlands und zieht jährlich viele Besucher an.</p>
-                <p>Touristen können die Strecke mit dem Auto, Fahrrad oder auf geführten Touren erkunden. Zu den Höhepunkten gehören der
+                <p id="irland10" key="text11">Touristen können die Strecke mit dem Auto, Fahrrad oder auf geführten Touren erkunden. Zu den Höhepunkten gehören der
                 Killarney National Park, Muckross House, Torc Waterfall und die Skellig Islands. Wanderungen und Bootsfahrten bieten
                 zusätzliche Möglichkeiten, die Natur hautnah zu erleben.</p>
-                <p>Eine der vielen Legenden entlang des Rings ist die Geschichte von Oisín und Niamh, die auf den magischen Pferden des
+                <p id="irland11" key="text12">Eine der vielen Legenden entlang des Rings ist die Geschichte von Oisín und Niamh, die auf den magischen Pferden des
                 Landes der ewigen Jugend (Tír na nÓg) ritten. Es wird gesagt, dass die Schönheit der Landschaft den Eingang zu diesem
                 mystischen Land verbergen könnte.</p>
-                <p>Diese Sehenswürdigkeiten in Munster bieten eine vielfältige Mischung aus Geschichte, Kultur und natürlicher Schönheit
+                <p id="irland12" key="text13">Diese Sehenswürdigkeiten in Munster bieten eine vielfältige Mischung aus Geschichte, Kultur und natürlicher Schönheit
                 und sind ein Muss für jeden Touristen, der diese Region Irlands besucht!</p>
                     </div>
                     </section>
@@ -121,7 +165,7 @@
             </div>
             <div class="subscription">
                 <input type="email" placeholder="E-mail">
-                <button class="button-s">Abonnieren
+                <button class="button-s" id="btn" key="btns">Abonnieren
                     <svg class=" icon-send" width="24" height="20">
                         <use href="./svgimages/symbol-defs.svg"></use>
                     </svg>
@@ -129,5 +173,11 @@
             </div>
         </div>
     </footer>
+    <script src="js/munster.js"></script>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="./js/menu.js"></script>
 </html>

@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leinster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/leinster.css">
+    <link rel="stylesheet" href="./css/tabletstyle.css">
+    <link rel="stylesheet" href="./css/mobilestyle.css">
+        <link rel="stylesheet" href="./css/desktop-style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ffd3309126.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,53 +22,89 @@
     <main>
         <header class="header">
             <div class="logo"> <span class="span1">I</span>rland</div>
+            <select class="select" name="language" id="language">
+                <option value="de">German</option>
+                <option value="en">English</option>
+            </select>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="index.html" id="homepage" key="menu">Startseite</a></li>
                     <li><a href="munster.html">Munster</a></li>
                     <li><a href="connacht.html">Connacht</a></li>
                     <li><a href="ulster.html">Ulster</a></li>
                     <li><a href="fotogalerie.html">Fotogalerie</a></li>
                 </ul>
+               
             </nav>
+            <button type="button" class="menu-open" data-menu-open>
+                <svg class="menu-svg" width="32" height="22">
+                    <use href="./images/menu-svgrepo-com.svg"></use>
+                </svg>
+            </button>
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="container">
+                    <div>
+                        <button type="button" class="menu-close" data-menu-close>
+                            <svg class="icon-a" width="8" height="8">
+                                <use href="./images/close-circle-svgrepo-com.svg"></use>
+                            </svg>
+                        </button>
+                        <ul class=" mob-menu-list list ">
+                            <li class="mob-menu-item list">
+                                <a class="mob-menu-link5 link" href="index.html"> Studio</a>
+                            </li>
+                            <li class="mob-menu-item list">
+                                <a class="mob-menu-link5 link" href="munster.html"> Munster</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link" href="connacht.html">Connacht</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link" href="ulster.html">Ulster</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link link2" href="fotogalerie.html">Fotogalerie</a>
+                            </li>
+                        </ul>
+                    </div>
         </header>
         <section class="sol">
             <div class="container"></div>
         </section>
         <section class="attraction">
-            <div class="container"><h2 class="text  ">Berühmte Sehenswürdigkeiten in Leinster, Irland</h2></div>
+            <div class="container"><h2 class="text " id="description" key="something">Berühmte Sehenswürdigkeiten in Leinster, Irland</h2></div>
         </section>
         <section class="container center">
-            <h2 class="lineUp">1. Trinity College und das Book of Kells</h2>
+            <h2 class="lineUp" id="h2" key="h">1. Trinity College und das Book of Kells</h2>
             <div class="image-container ">
                 <img src="./images/College.jpg" alt="Trinity College Library" class="right-image">
             </div>
-            <div class="description"><p>Das Trinity College in Dublin, gegründet 1592, ist die älteste Universität Irlands und ein bedeutendes
+            <div class="description"><p id="irland" key="text1">Das Trinity College in Dublin, gegründet 1592, ist die älteste Universität Irlands und ein bedeutendes
                 Bildungszentrum. Eine der berühmtesten Attraktionen des Colleges ist das Book of Kells, ein illuminiertes Manuskript
                 aus dem 9. Jahrhundert. Es ist reich verziert und enthüllt die vier Evangelien des Neuen Testaments, reich verziert
                 mit komplexen Mustern und Symbolen.</p>
-            <p>Das Book of Kells gilt als eines der schönsten Beispiele keltischer Kunst und zieht Tausende von Besuchern an. Das
+            <p id="irland1" key="text2">Das Book of Kells gilt als eines der schönsten Beispiele keltischer Kunst und zieht Tausende von Besuchern an. Das
                 Manuskript wird in der beeindruckenden Alten Bibliothek des Trinity College ausgestellt.</p>
-            <p>Wenn Besucher die Ausstellung des Book of Kells besuchen, die prächtigen Verzierung bewundern und durch die Long Room
+            <p id="irland2" key="text3">Wenn Besucher die Ausstellung des Book of Kells besuchen, die prächtigen Verzierung bewundern und durch die Long Room
                 Library spazieren, eine der beeindruckendsten Bibliotheken der Welt.</p>
-            <p>Eine Legende besagt, dass die Mönche von Iona das Buch nach Irland brachten, um es vor Wikinger zu schützen, die ihr
+            <p id="irland3" key="text4">Eine Legende besagt, dass die Mönche von Iona das Buch nach Irland brachten, um es vor Wikinger zu schützen, die ihr
                 Klöster überfallen hatten.</p></div> 
         </section>
         
         <section class="container center">
-            <h2 class="lineUp">2. Kilkenny Castle</h2>
+            <h2 class="lineUp" >2. Kilkenny Castle</h2>
             <div class="image-container">
                 <img src="./images/Kilkenny.jpg" alt="Kilkenny Castle" class="right-image">
             </div>
             <div class="description">
-<p>Kilkenny Castle, erbaut im 12. Jahrhundert, ist eine prächtige Normannenburg in der Stadt Kilkenny. Das Schloss
+<p id="irland4" key="text5">Kilkenny Castle, erbaut im 12. Jahrhundert, ist eine prächtige Normannenburg in der Stadt Kilkenny. Das Schloss
     hat im Laufe der Jahrhunderte zahlreiche Änderungen erfahren und steht heute als beeindruckendes Beispiel
     mittelalterlicher Architektur.</p>
-<p>Kilkenny Castle ist bekannt für seine stattliche Struktur und seine wunderschön gepflegten Gärten. Es bietet den
+<p id="irland5" key="text6">Kilkenny Castle ist bekannt für seine stattliche Struktur und seine wunderschön gepflegten Gärten. Es bietet den
     faszinierenden Einblick in das Leben der irischen Aristokratie in der Vergangenheit.</p>
-<p>Besucher können das Schlossmuseum erkunden, durch die Gärten spazieren und die beeindruckende Kunst- und
+<p id="irland6" key="text7">Besucher können das Schlossmuseum erkunden, durch die Gärten spazieren und die beeindruckende Kunst- und
     Antiquitätensammlung der Burg besichtigen.</p>
-<p>Es gibt Geschichten über den Geist der "Weißen Dame", die durch die Hallen des Schlosses wandeln soll.</p>
+<p id="irland7" key="text8" >Es gibt Geschichten über den Geist der "Weißen Dame", die durch die Hallen des Schlosses wandeln soll.</p>
             </div>
         </section>
         <section class="container center ">
@@ -69,17 +113,19 @@
                 <img src="./images/Glendalough.jpg" alt="Glendalough" class="right-image">
             </div>
             <div class="description">
-<p>Glendalough, ein frühes christliches Kloster im County Wicklow, wurde im 6. Jahrhundert von St. Kevin gegründet.
+<p id="irland8" key="text9">Glendalough, ein frühes christliches Kloster im County Wicklow, wurde im 6. Jahrhundert von St. Kevin gegründet.
     "Die Tal der zwei Seen" ist bekannt für seine malerische Landschaft und die beeindruckenden Ruinen.</p>
-<p>Glendalough ist ein spirituelles und historisches Zentrum mit Überresten eines Rundturms, einer Kathedrale und
+<p id="irland9" key="text10">Glendalough ist ein spirituelles und historisches Zentrum mit Überresten eines Rundturms, einer Kathedrale und
     mehrerer Kirchen. Es ist ein beliebtes Ziel für Pilger und Touristen, die sich für irische Geschichte und Natur
     interessieren.</p>
-<p>Besucher können die Klosterruinen erkunden, Wanderungen durch die Wicklow Mountains unternehmen und die
+<p id="irland10" key="text11">Besucher können die Klosterruinen erkunden, Wanderungen durch die Wicklow Mountains unternehmen und die
     idyllischen Seen bewundern. Es gibt auch geführte Touren, die die Geschichte und Legenden von Glendalough
     näherbringen.</p>
-<p>Der Legende nach soll St. Kevin einen seltsamen Vorfall erlebt haben, als eine Amsel ihr Nest in seiner Hand
+<p id="irland11" key="text12">Der Legende nach soll St. Kevin einen seltsamen Vorfall erlebt haben, als eine Amsel ihr Nest in seiner Hand
     baute, während er betete. St. Kevin hielt seine Hand still, bis das Ei ausgebrütet war, was als Symbol seiner
     Heiligkeit und Geduld gilt.</p>
+    <p id="irland12" key="text13">Diese Sehenswürdigkeiten in Leinster bieten einen reichen Einblick in die Geschichte, Kultur und Legenden Irlands und
+    sind ein Muss für jeden Touristen, der die Region besucht!</p>
             </div>
            
         </section>
@@ -117,7 +163,7 @@
             </div>
             <div class="subscription">
                 <input type="email" placeholder="E-mail">
-                <button class="button-s">Abonnieren
+                <button class="button-s" id="btn" key="btns">Abonnieren
                     <svg class=" icon-send" width="24" height="20">
                         <use href="./svgimages/symbol-defs.svg"></use>
                     </svg>
@@ -125,5 +171,11 @@
             </div>
         </div>
     </footer>
+    <script src="js/leinster.js"></script>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="./js/menu.js"></script>
 </html>

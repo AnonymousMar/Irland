@@ -1,0 +1,17 @@
+@media screen and (min-width:1200px){
+.container {
+        max-width: 1158px;
+    }
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+    }
+        .menu-svg {
+            display: none;
+        }
+    
+        .menu-open {
+            display: none;
+        }
+
+}

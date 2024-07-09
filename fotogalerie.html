@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotogalerie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/fotogalerie.css">
+    <link rel="stylesheet" href="./css/tabletstyle.css">
+    <link rel="stylesheet" href="./css/mobilestyle.css">
+    <link rel="stylesheet" href="./css/desktop-style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ffd3309126.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,15 +23,51 @@
     <main>
         <header class="header">
             <div class="logo"> <span class="span1">I</span>rland</div>
+            <select class="select" name="laguage" id="laguage">
+                <option value="de">German</option>
+                <option value="en">English</option>
+            </select>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="index.html" id="homepage" key="menu">Startseite</a></li>
                     <li><a href="munster.html">Munster</a></li>
                     <li><a href="connacht.html">Connacht</a></li>
                     <li><a href="ulster.html">Ulster</a></li>
                     <li><a href="fotogalerie.html">Fotogalerie</a></li>
                 </ul>
+               
             </nav>
+            <button type="button" class="menu-open" data-menu-open>
+                <svg class="menu-svg" width="32" height="22">
+                    <use href="./images/menu-svgrepo-com.svg"></use>
+                </svg>
+            </button>
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="container">
+                    <div>
+                        <button type="button" class="menu-close" data-menu-close>
+                            <svg class="icon-a" width="8" height="8">
+                                <use href="./images/close-circle-svgrepo-com.svg"></use>
+                            </svg>
+                        </button>
+                        <ul class=" mob-menu-list list ">
+                            <li class="mob-menu-item list">
+                                <a class="mob-menu-link5 link" href="index.html"> Studio</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link" href="leinster.html">Leinster</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link" href="connacht.html">Connacht</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link" href="ulster.html">Ulster</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link5 link link2" href="munster.html">Munster</a>
+                            </li>
+                        </ul>
+                    </div>
         </header>
         <section class="sol">
             <div class="container"></div>
@@ -33,12 +77,20 @@
                 <h2 class="text  ">Fotogalerie</h2>
             </div>
         </section>
-        <section class="names names1">
+      <!---<section class="names names1">
             <div class="container">
                 <h2 class="text  ">Leinster</h2>
             </div>
-        </section>
+        </section>--->  
         <div class="container">
+            <div class="gallery-pagination"></div>
+            <section class="names">
+                <div class="container">
+                    <h2 class="text  ">Leinster</h2>
+                </div>
+            </section>
+            </div>
+            </div>
             <div class="gallery">   
                 <div class="swiper gallery-swiper">
                     <div class="swiper-wrapper">
@@ -83,15 +135,15 @@
                         </button>
                     </div>--->    
                    
-                    <div class="gallery-pagination"></div>
-                    <section class="names">
-                        <div class="container">
-                            <h2 class="text  ">Munster</h2>
-                        </div>
-                    </section>
-                </div>
-            </div>
             <div class="container">
+                <div class="gallery-pagination"></div>
+                <section class="names">
+                    <div class="container">
+                        <h2 class="text  ">Munster</h2>
+                    </div>
+                </section>
+                </div>
+                </div>
                 <div class="gallery">
                     <div class="swiper gallery-swiper">
                         <div class="swiper-wrapper">
@@ -125,30 +177,16 @@
                                         src="img/OIP (1).jpg" alt="Hook"></a>
                             </div>
                         </div>
-                        <!---<div class="gallery__navigation">
-                            <button class="gallery__btn gallery__btn-prev">
-                                <svg id="Livello_1" enable-background="new 0 0 64 64" viewBox="0 0 64 64"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="m18.5 32 27 27-6.7-27 6.7-27z" />
-                                </svg>
-                            </button>
-                            <button class="gallery__btn gallery__btn-next">
-                                <svg id="Livello_1" enable-background="new 0 0 64 64" viewBox="0 0 64 64"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="m45.5 32-27-27 6.7 27-6.7 27z" />
-                                </svg>
-                            </button>
-                        </div>-->
-                        
-                        <div class="gallery-pagination"></div>
-                        <section class="names">
-                            <div class="container">
-                                <h2 class="text  ">Connacht</h2>
-                            </div>
-                        </section>
-                    </div>
-                </div>
+                       
                 <div class="container">
+                    <div class="gallery-pagination"></div>
+                    <section class="names">
+                        <div class="container">
+                            <h2 class="text  ">Connacht</h2>
+                        </div>
+                    </section>
+                    </div>
+                    </div>
                     <div class="gallery">
                         <div class="swiper gallery-swiper">
                             <div class="swiper-wrapper">
@@ -198,15 +236,16 @@
                             </div>-->
                            
                            
-                            <div class="gallery-pagination"></div>
-                            <section class="names">
-                                <div class="container">
-                                    <h2 class="text  ">Ulster</h2>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
+                           
                     <div class="container">
+                        <div class="gallery-pagination"></div>
+                        <section class="names">
+                            <div class="container">
+                                <h2 class="text  ">Ulster</h2>
+                            </div>
+                        </section>
+                        </div>
+                        </div>
                         <div class="gallery">
                             <div class="swiper gallery-swiper">
                                 <div class="swiper-wrapper">
@@ -291,7 +330,7 @@
                 </div>
                 <div class="subscription">
                     <input type="email" placeholder="E-mail">
-                    <button class="button-s">Abonnieren
+                    <button class="button-s" id="btn" key="btns">Abonnieren
                         <svg class=" icon-send" width="24" height="20">
                             <use href="./svgimages/symbol-defs.svg"></use>
                         </svg>
@@ -302,5 +341,11 @@
         <script src="js/fslightbox.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/fotogalerie.js"></script>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="./js/menu.js"></script>
 </html>

@@ -1,0 +1,41 @@
+@media screen and (min-width:768px)and (max-width:1199px) {
+    .container {
+            max-width: 768px;
+        }
+    .logo{
+        font-size: 40px;
+    }
+    .select{
+        padding: 5px;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+        .nav-links a{
+            font-size: 16px;
+        }
+    .box{
+        width: 680px;
+    }
+        .text-irland-1{
+            font-size: 26px;
+        }
+        .text-irland{
+            font-size: 46px;
+        }
+        .text{
+            font-size: 35px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 25px;
+        }
+                .menu-svg {
+                    display: none;
+                }
+        
+                .menu-open {
+                    display: none;
+                }
+}

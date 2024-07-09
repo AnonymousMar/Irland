@@ -1,0 +1,61 @@
+@media screen and (min-width:428px) and (max-width:767px){
+    .container {
+            max-width: 428px;
+        }
+        .text{
+            font-size: 35px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .description{
+            width: 428px;
+        }
+        .logo {
+            font-size: 35px;
+        }
+         .mob-menu-link1 {
+            font-size: 36px;
+            line-height: calc(40/36);
+        }
+         .social-mob-menu {
+            gap: 64px;
+        }
+        .select {
+            padding: 5px;
+            font-size: 12px;
+             margin-left: 5px;
+            }
+        .modal {
+             width: 408px;
+    }
+        .modal-coment {
+            width: 360px;
+    }
+        .no-scroll {
+           overflow: hidden;
+    }
+       .nav-links li {
+            display: none;
+        }
+          .text-irland{
+            font-size: 35px;
+          }
+        .text-irland-1{
+            font-size: 20px;
+        }
+        .box{
+            width: 428px;
+        }
+        .box-icone2 {
+            justify-content: center;
+        }
+        .email {
+             width: 396px;
+        }
+        .subscription {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+}
+}
