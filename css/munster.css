@@ -18,6 +18,9 @@
     --orange3: #f2943d93;
     --orange4: #7a4a0f;
 }
+body {
+    margin: 0;
+}
 .select {
     padding: 10px;
     font-size: 16px;
@@ -588,4 +591,15 @@ body {
     line-height: calc(40/36);
     letter-spacing: 0.02em;
     color: var(--title-color);
+}
+.fa-solid {
+    color: var(--while-color);
+}
+
+.fa-instagram {
+    color: var(--while-color);
+}
+
+.fa-tiktok {
+    color: var(--while-color);
 }

@@ -9,7 +9,7 @@
             font-size: 20px;
         }
         .description{
-            width: 428px;
+            width: 380px;
         }
         .logo {
             font-size: 35px;
@@ -20,6 +20,9 @@
         }
          .social-mob-menu {
             gap: 64px;
+        }
+        .center{
+            width: 380px;
         }
         .select {
             padding: 5px;

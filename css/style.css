@@ -227,9 +227,9 @@ body {
     height: 40px;
 }
 .box-icone-a {
+    background-color: var(--title-color);
     width: 40px;
     height: 40px;
-    background-color: var(--title-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -240,7 +240,6 @@ body {
 }
 .box-icone-a:focus,
 .box-icone-a:hover {
-    background-color: var(--while-color);
     fill: var(--title-color);
 }
 
@@ -294,6 +293,7 @@ textarea {
 }
 
 .button-s {
+    background-color: var(--title-color);
     height: 40px;
     display: flex;
     align-items: center;
@@ -606,4 +606,15 @@ footer {
     line-height: calc(40/36);
     letter-spacing: 0.02em;
     color: var(--title-color);
+}
+
+
+.fa-solid{
+    color: var(--while-color);
+}
+.fa-instagram{
+    color: var(--while-color);
+}
+.fa-tiktok{
+    color: var(--while-color);
 }
