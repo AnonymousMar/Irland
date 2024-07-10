@@ -19,6 +19,7 @@
 body {
     margin: 0;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -26,9 +27,11 @@ header {
     background-color: #FFA500;
     padding: 20px 20px;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 .logo {
     font-weight: bold;
     font-family: 'Montserrat';
@@ -55,18 +58,20 @@ html {
     padding-left: 10px;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     color: var(--title-color);
 }
+
 .list {
     list-style: none;
 }
+
 ul {
     margin-top: 0%;
     margin-bottom: 0%;
     padding-left: 0%;
 }
-        
+
 h1,
 h2,
 h3,
@@ -92,6 +97,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 .select {
     padding: 10px;
     font-size: 16px;
@@ -100,7 +106,8 @@ img {
     background-color: #f9f9f9;
     cursor: pointer;
 }
-.header{
+
+.header {
     background: var(--orange);
     padding-top: 25px;
     padding-bottom: 25px;
@@ -108,15 +115,18 @@ img {
     justify-content: space-between;
     align-items: center;
 }
-.translate{
+
+.translate {
     background: transparent;
     border: none;
     margin-left: 12px;
 }
-.title{
-    color:var(--title-color) ;
+
+.title {
+    color: var(--title-color);
 }
-.sidebar{
+
+.sidebar {
     background-color: var(--orange);
     width: 498px;
     padding: 0;
@@ -144,68 +154,81 @@ img {
 .menu-item:hover {
     color: #000;
 }
-.text{
+
+.text {
     display: flex;
     padding-left: 30px;
     font-size: 41px;
     padding-right: 15px;
 }
-.span1{
+
+.span1 {
     color: var(--while-color);
 }
-.box{
+
+.box {
     width: 868px;
     text-align-last: left;
     margin-bottom: 30px;
 }
-.text-irland{
+
+.text-irland {
     padding-top: 45px;
     padding-bottom: 25px;
     font-family: 'Montserrat Regular';
     font-size: 64px;
 }
-.text-irland-1{
-    padding-top:10px;
+
+.text-irland-1 {
+    padding-top: 10px;
     font-family: 'Montserrat Regular';
     font-size: 26px;
 }
-.sol{
+
+.sol {
     padding-top: 112px;
     padding-bottom: 112px;
     margin-left: auto;
     margin-right: auto;
-    background-image:  url('../images/image.jpg');
+    background-image: url('../images/image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: auto; 
+    width: auto;
     height: 720px;
     animation: changing 10s infinite;
 }
-@keyframes changing{
-    0%{
+
+@keyframes changing {
+    0% {
         background-image: url('../images/Ir.jpg');
     }
+
     35% {
         background-image: url('../images/Ireland.jpg');
     }
+
     68% {
         background-image: url('../images/Irrr.jpg');
     }
 }
+
 body {
     font-family: 'Roboto', sans-serif;
 }
-.footer{
+
+.footer {
     background-color: var(--orange);
-        padding-top: 40px;
-        padding-bottom: 50px;
-        margin-left: auto;
-        margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .footer-div-1 {
     margin-top: 72px;
 }
+
 .media {
     font-size: 25px;
     line-height: calc(24/16);
@@ -213,6 +236,7 @@ body {
     text-align: center;
     margin-bottom: 16px;
 }
+
 .box-icone2 {
     display: flex;
     gap: 16px;
@@ -220,13 +244,16 @@ body {
     margin-right: auto;
     justify-content: center;
 }
+
 .list {
     list-style: none;
 }
+
 .box-icone {
     width: 40px;
     height: 40px;
 }
+
 .box-icone-a {
     background-color: var(--title-color);
     width: 40px;
@@ -239,6 +266,7 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--while-color);
 }
+
 .box-icone-a:focus,
 .box-icone-a:hover {
     fill: var(--title-color);
@@ -266,11 +294,11 @@ body {
       
 }*/
 .contact-form {
- display: flex;
- align-items: flex-end;
-gap: 24px;
- }
-        
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+}
+
 .email {
     width: 254px;
     height: 40px;
@@ -282,6 +310,7 @@ gap: 24px;
     color: var(--while-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 button,
 input,
 optgroup,
@@ -308,6 +337,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;
 }
+
 .v:not(:last-child) {
     margin-bottom: 72px;
 }
@@ -320,18 +350,22 @@ textarea {
 .email::placeholder-shown {
     color: var(--blue-color);
 }
+
 .icon-send {
     margin-left: 16px;
     fill: var(--while-color);
 }
-.aria-label{
+
+.aria-label {
     color: var(--while-color);
 }
+
 .contact-form {
-     display: flex;
-      align-items: flex-end;
-      gap: 24px;
-    }
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+}
+
 .footer-container {
     display: flex;
 }
@@ -339,6 +373,7 @@ textarea {
 .div {
     margin-right: 120px;
 }
+
 footer {
     background-color: var(--orange);
     padding: 20px 0px;
@@ -387,9 +422,11 @@ footer {
     border-radius: 5px;
     margin-right: 10px;
 }
-.subscription button:hover{
+
+.subscription button:hover {
     background-color: #000000;
 }
+
 .subscription button {
     padding: 10px 20px;
     color: #fff;
@@ -397,12 +434,14 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
-.arrow-up{
+
+.arrow-up {
     position: fixed;
     bottom: 30px;
     right: 30px;
 }
-.arrow-up a{
+
+.arrow-up a {
     width: 50px;
     height: 50px;
     background: var(--title-color);
@@ -413,13 +452,16 @@ footer {
     color: var(--while-color);
     transition: 0.05s;
 }
-.arrow-up a:hover{
+
+.arrow-up a:hover {
     background-color: var(--orange2);
 
 }
+
 .lineUp {
     animation: 2s anim-lineUp ease-out infinite;
 }
+
 @keyframes anim-lineUp {
     0% {
         opacity: 0;
@@ -507,15 +549,18 @@ footer {
         opacity: 1;
         text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
     }
+
     100% {
         transform: scale(1);
         opacity: 1;
         text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
-     }
+    }
 }
+
 .lineUp {
     animation: 2s anim-lineUp ease-out infinite;
 }
+
 @keyframes anim-lineUp {
     0% {
         opacity: 0;
@@ -552,10 +597,11 @@ footer {
     outline: none;
     margin-left: auto;
 }
-.menu-svg{
-        stroke: var(--title-color);
-        justify-content: center;
-        align-items: center;
+
+.menu-svg {
+    stroke: var(--title-color);
+    justify-content: center;
+    align-items: center;
 }
 
 .is-hidden {

@@ -1,15 +1,19 @@
-@media screen and (min-width:428px) and (max-width:767px){
+@media screen and (min-width:320px) and (max-width:767px){
     .container {
-            max-width: 428px;
+            min-width: 320px;
         }
         .text{
             font-size: 35px;
         }
         p{
-            font-size: 20px;
+            font-size: 25px;
         }
         .description{
-            width: 380px;
+            width: 210px;
+                height: auto;
+        }
+        .subscription input{
+            width: 80px;
         }
         .logo {
             font-size: 35px;
@@ -22,7 +26,8 @@
             gap: 64px;
         }
         .center{
-            width: 380px;
+            width: 210px;
+            height: auto;
         }
         .select {
             padding: 5px;
@@ -45,10 +50,11 @@
             font-size: 35px;
           }
         .text-irland-1{
-            font-size: 20px;
+            font-size: 25px;
         }
         .box{
-            width: 380px;
+           width: 210px;
+           height: auto;
         }
         .box-icone2 {
             justify-content: center;
