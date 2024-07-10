@@ -117,7 +117,7 @@ img {
 }
 @keyframes changing {
     0% {
-        background-image: url('../images/R.jpg');
+        background-image: url('../images/photo_5192772476734661302_y\ \(1\).jpg');
     }
 
     40% {
@@ -560,14 +560,6 @@ body {
     letter-spacing: 0.02em;
     color: var(--title-color);
 }
-.fa-solid {
-    color: var(--while-color);
-}
-
-.fa-instagram {
-    color: var(--while-color);
-}
-
-.fa-tiktok {
-    color: var(--while-color);
+.svg {
+    margin-left: 5px;
 }
