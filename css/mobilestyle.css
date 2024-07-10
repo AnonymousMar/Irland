@@ -9,7 +9,7 @@
             font-size: 25px;
         }
         .description{
-            width: 210px;
+            width: 280px;
                 height: auto;
         }
         .subscription input{
@@ -26,8 +26,17 @@
             gap: 64px;
         }
         .center{
-            width: 210px;
+            width: 280px;
             height: auto;
+        }
+        .right-image{
+            width: 100%;
+        }
+                .link {
+                    text-decoration: none;
+                }
+        .footer-container{
+            display: block;
         }
         .select {
             padding: 5px;
@@ -53,7 +62,7 @@
             font-size: 25px;
         }
         .box{
-           width: 210px;
+           width: 280px;
            height: auto;
         }
         .box-icone2 {

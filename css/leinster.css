@@ -113,6 +113,12 @@ img {
     height: 720px;
     animation: changing 10s infinite;
 }
+/* 2x screens, retina, 640x480 image */
+@media (min-resolution: 192dpi) {
+    .sol {
+        background-image: url("../images/central\ picture\ \(7\).jpg");
+    }
+}
 @keyframes changing{
     0% {
         background-image: url('../images/photo_5192772476734661147_x.jpg');
@@ -368,9 +374,6 @@ textarea {
     gap: 24px;
 }
 
-.footer-container {
-    display: flex;
-}
 
 .div {
     margin-right: 120px;
@@ -386,11 +389,12 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    justify-content: space-between;
 }
 
 .social-media {
@@ -493,8 +497,7 @@ body {
 
 .box-icone-a:focus,
 .box-icone-a:hover {
-    background-color: var(--while-color);
-    fill: var(--title-color);
+    background-color: var(--orange4);
 }
 
 .media-icon :hover,
@@ -573,6 +576,9 @@ body {
     line-height: calc(40/36);
     letter-spacing: 0.02em;
     color: var(--title-color);
+}
+.mob-menu-link5:hover {
+    color: var(--orange);
 }
 .svg {
     margin-left: 5px;

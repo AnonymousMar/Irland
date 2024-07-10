@@ -4,7 +4,6 @@
     }
     .footer-container {
         display: flex;
-        align-items: baseline;
     }
         .menu-svg {
             display: none;
