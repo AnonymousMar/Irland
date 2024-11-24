@@ -1,16 +1,12 @@
 :root {
     --title-color: #000000;
-    --typle-color: #5c6afd;
     --while-color: #FFFFFF;
     --typle2-color: #434455;
     --while2-color: #E7E9FC;
     --while3-color: #F4F4FD;
-    --blue-color: #4D5AE5;
     --title2-color: #AFB1B8;
     --title3-color: #8E8F99;
     --title4-color: #E5E5E5;
-    --blue2-color: #404BBF;
-    --green: #31D0AA;
     ----red: red;
     --gray: #757575;
     --orange: #F2943D;
@@ -20,53 +16,6 @@
 body {
     margin: 0;
 }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:var(--orange3);
-    padding: 20px 20px;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.logo {
-    font-weight: bold;
-    font-family: 'Montserrat';
-    font-size: 64px;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: rgb(253, 253, 253);
-    /* Adjust the color as needed */
-    font-size: 30px;
-    font-family: 'Montserrat';
-    padding-left: 10px;
-}
-
-.nav-links a:hover {
-    color: var(--title-color);
-}
-
-.list {
-    list-style: none;
-}
-
 ul {
     margin-top: 0%;
     margin-bottom: 0%;
@@ -98,7 +47,67 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 }
+.list {
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--orange3);
+    padding: 20px 20px;
+}
 
+
+.logo {
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 64px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-size: 30px;
+    font-family: 'Montserrat';
+    padding-left: 10px;
+}
+
+.nav-links a:hover {
+    color: var(--title-color);
+}
+.a:hover {
+    color: var(--title-color);
+}
+
+.a{
+    text-decoration: none;
+    color: var(--while-color);
+    padding-bottom: 15px;
+}
+.impressum{
+    margin-top: 15px;
+    text-align: center;
+}
+.responsive-iframe{
+    width: 100%;
+    border: none;
+}
 .select {
     padding: 10px;
     font-size: 16px;
@@ -138,22 +147,8 @@ img {
     right: 0;
 }
 
-/*.menu-item {
-    display: block;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    text-align: center;
-    border-bottom: 2px solid white;
-    font-family: 'Montserrat Regular';
-    font-size:  64px; ;
-}*/
-
-/*.menu-item:last-child {
-    border-bottom: none;}*/
 .menu-item:hover {
-    color: #000;
+    color: var(--title-color);
 }
 
 .text {
@@ -199,7 +194,7 @@ img {
     height: 720px;
     animation: changing 10s infinite;
 }
-/* 2x screens, retina, 640x480 image */
+/*Fotoschalter*/
 @media (min-resolution: 192dpi) {
     .sol {
         background-image: url("../images/Group\ 22\ \(2\).jpg");
@@ -219,11 +214,11 @@ img {
         background-image: url('../images/Irrr.jpg');
     }
 }
-
+/*Schriftart*/
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+/*Footer*/
 .footer {
     background-color: var(--orange);
     padding-top: 40px;
@@ -288,18 +283,7 @@ body {
     margin-top: 0px;
 }
 
-/*.subscribe {
-    margin-right: auto;
-    margin-bottom: 0px;
-    text-align: left;
-    font-size: 16px;
-    line-height: calc(24/16);
-    color: var(--while-color);
-    text-align: center;
-    margin-left: auto;
-    margin-bottom: 16px;
-      
-}*/
+
 .contact-form {
     display: flex;
     align-items: flex-end;
@@ -433,12 +417,12 @@ footer {
 }
 
 .subscription button:hover {
-    background-color: #000000;
+    background-color: var(--title-color);
 }
 
 .subscription button {
     padding: 10px 20px;
-    color: #fff;
+    color: var(--while-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -492,7 +476,6 @@ footer {
     }
 }
 
-/* flipY class and keyframes*/
 .flipY {
     animation-name: spin, depth;
     animation-timing-function: linear;
@@ -539,21 +522,21 @@ footer {
 
 @keyframes anim-popoutin {
     0% {
-        color: black;
+        color: var(--title-color);
         transform: scale(0);
         opacity: 0;
         text-shadow: 0 0 0 rgba(0, 0, 0, 0);
     }
 
     25% {
-        color: red;
+        color: var(----red);
         transform: scale(2);
         opacity: 1;
         text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
     }
 
     50% {
-        color: black;
+        color: var(--title-color);
         transform: scale(1);
         opacity: 1;
         text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
@@ -668,4 +651,13 @@ footer {
 }
 .svg {
     margin-left: 5px;
+}
+
+
+/*Maps*/
+
+.map{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

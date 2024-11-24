@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +16,20 @@
 </head>
 <body>
     <div class="arrow-up">
-        <a href="#"><i class="fas fa-arrow-up"></i></a>
+        <a href="#"><em class="fas fa-arrow-up"></em></a>
     </div>
     <main>
         <header class="header">
             <div class="logo"> <span class="span1">I</span>rland</div>
+            <label for="language">
             <select class="select" name="language" id="language">
-                <option value="de">DE</option>
+                    <option value="de">DE</option>
                 <option value="en">EN</option>
             </select>
+        </label>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" id="homepage" key="menu">Startseite</a></li>
+                    <li><a href="index.html" id="homepage" data-key="menu">Startseite</a></li>
                     <li><a href="leinster.html">Leinster</a></li>
                     <li><a href="munster.html">Munster</a></li>
                     <li><a href="ulster.html">Ulster</a></li>
@@ -68,13 +70,15 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
         </header>
         <section class="sol">
             <div class="container"></div>
         </section>
         <section class="attraction">
             <div class="container">
-                <h2 class="text " id="h2" key="h">Berühmte Sehenswürdigkeiten in Connacht, Irland</h2>
+                <h2 class="text " id="h2" data-key="h">Berühmte Sehenswürdigkeiten in Connacht, Irland</h2>
             </div>
         </section>
         <section class="container center box">
@@ -83,14 +87,14 @@
                 <img  src="./images/College2.jpg" srcset="./images/College2.jpg 1x, ./images/College2x.jpg 2x"  alt="Trinity College Library" class="right-image">
             </div>
             <div class="description">
-                <p align="left" id="irland" key="text1">Die Kylemore Abbey, gelegen in der Connemara-Region von County Galway, ist ein beeindruckendes neogotisches Schloss, das
+                <p  id="irland" data-key="text1">Die Kylemore Abbey, gelegen in der Connemara-Region von County Galway, ist ein beeindruckendes neogotisches Schloss, das
                 im 19. Jahrhundert von Mitchell Henry als romantisches Geschenk für seine Frau Margaret erbaut wurde. Das Anwesen wurde
                 später zu einem Benediktinerkloster und ist bis heute ein aktives Kloster.</p>
-                <p align="left" id="irland1" key="text2">Kylemore Abbey ist bekannt für ihre malerische Lage, eingebettet in eine Berglandschaft und mit Blick auf einen ruhigen
+                <p  id="irland1" data-key="text2">Kylemore Abbey ist bekannt für ihre malerische Lage, eingebettet in eine Berglandschaft und mit Blick auf einen ruhigen
                 See. Die Abtei, der viktorianische ummauerte Garten und die gotische Kirche ziehen jährlich Tausende von Besuchern an.</p>
-                <p align="left" id="irland2" key="text3">Besucher können die prunkvollen Räume der Abtei besichtigen, die wunderschön restaurierten viktorianischen Gärten
+                <p  id="irland2" data-key="text3">Besucher können die prunkvollen Räume der Abtei besichtigen, die wunderschön restaurierten viktorianischen Gärten
                 erkunden und die gotische Kirche sowie das Mausoleum besuchen.</p>
-                <p align="left" id="irland3" key="text4">Eine lokale Legende erzählt von der "Weißen Dame" von Kylemore, dem Geist von Margaret Henry, die angeblich auf dem
+                <p  id="irland3" data-key="text4">Eine lokale Legende erzählt von der "Weißen Dame" von Kylemore, dem Geist von Margaret Henry, die angeblich auf dem
                 Gelände der Abtei umherwandert und über den Ort wacht, den sie liebte.</p>
             </div>
         </section>
@@ -100,16 +104,16 @@
                 <img src="./images/Kilkenny2.jpg" srcset="./images/Kilkenny2.jpg 1x, ./images/Kilkenny2x.jpg 2x" alt="Kilkenny Castle" class="right-image">
             </div>
             <div class="description">
-                <p align="left" id="irland4" key="text5">Obwohl sie technisch gesehen in County Clare liegen, werden die Cliffs of Moher oft in Touren durch die Region Connacht
+                <p  id="irland4" data-key="text5">Obwohl sie technisch gesehen in County Clare liegen, werden die Cliffs of Moher oft in Touren durch die Region Connacht
                 einbezogen, aufgrund ihrer Nähe und Bedeutung. Diese ikonischen Klippen erstrecken sich über etwa 14 Kilometer entlang
                 der Atlantikküste und ragen über 200 Meter hoch auf.</p>
-                <p align="left"  id="irland5" key="text6">Die Cliffs of Moher sind eine der meistbesuchten Naturattraktionen Irlands und bieten atemberaubende Ausblicke auf den
+                <p   id="irland5" data-key="text6">Die Cliffs of Moher sind eine der meistbesuchten Naturattraktionen Irlands und bieten atemberaubende Ausblicke auf den
                 Atlantischen Ozean und die Aran-Inseln. Sie sind Teil des UNESCO Global Geoparks und wurden in zahlreichen Filmen und
                 Dokumentationen gezeigt.</p>
-                <p align="left" id="irland6" key="text7">Besucher können entlang der Klippenpfade wandern, die Panoramaaussichten von verschiedenen Aussichtspunkten genießen und
+                <p  id="irland6" data-key="text7">Besucher können entlang der Klippenpfade wandern, die Panoramaaussichten von verschiedenen Aussichtspunkten genießen und
                 das umweltfreundliche Besucherzentrum besuchen, das Informationen über die Geologie, Tierwelt und Geschichte der Klippen
                 bietet.</p>
-                <p align="left" id="irland7" key="text8">Laut lokaler Folklore sind die Klippen die Heimat des Geistes einer Piratenkönigin namens Gráinne O'Malley, die einst
+                <p id="irland7" data-key="text8">Laut lokaler Folklore sind die Klippen die Heimat des Geistes einer Piratenkönigin namens Gráinne O'Malley, die einst
                 die Gewässer vor der Westküste Irlands beherrschte. Ihr Geist soll die Klippen und ihre versteckten Schätze noch immer
                 beschützen.</p>
             </div>
@@ -120,21 +124,20 @@
                     <img src="./images/Glendalough2.jpg" srcset="./images/Glendalough2.jpg 1x,./images/Glendalough2x.jpg 2x" alt="Glendalough" class="right-image">
                 </div>
                 <div class="description">
-                    <p align="left" id="irland8" key="text9">Croagh Patrick, lokal bekannt als "The Reek", ist ein Berg in County Mayo, der seit über 5.000 Jahren eine Pilgerstätte
+                    <p  id="irland8" data-key="text9">Croagh Patrick, lokal bekannt als "The Reek", ist ein Berg in County Mayo, der seit über 5.000 Jahren eine Pilgerstätte
                     ist. Der Berg ist nach dem heiligen Patrick, dem Schutzpatron Irlands, benannt, der der Legende nach 441 n. Chr. 40 Tage
                     auf seinem Gipfel gefastet haben soll.</p>
-                    <p align="left" id="irland9" key="text10">Croagh Patrick ist bekannt für seine religiöse Bedeutung und die jährliche Pilgerfahrt, die am letzten Sonntag im Juli,
+                    <p  id="irland9" data-key="text10">Croagh Patrick ist bekannt für seine religiöse Bedeutung und die jährliche Pilgerfahrt, die am letzten Sonntag im Juli,
                     dem sogenannten Reek Sunday, stattfindet. Tausende Pilger besteigen den Berg, um an der Messe in der Kapelle auf dem
                     Gipfel teilzunehmen.</p>
-                    <p align="left" id="irland10" key="text11">Der Aufstieg auf Croagh Patrick ist eine beliebte Aktivität sowohl für Pilger als auch für Wanderer. Der Aufstieg bietet
+                    <p  id="irland10" data-key="text11">Der Aufstieg auf Croagh Patrick ist eine beliebte Aktivität sowohl für Pilger als auch für Wanderer. Der Aufstieg bietet
                     atemberaubende Ausblicke auf die Clew Bay und die umliegende Landschaft.</p>
-                    <p align="left" id="irland11" key="text12">Der Legende nach verbannte der heilige Patrick alle Schlangen aus Irland vom Gipfel des Croagh Patrick aus, was seinen
+                    <p  id="irland11" data-key="text12">Der Legende nach verbannte der heilige Patrick alle Schlangen aus Irland vom Gipfel des Croagh Patrick aus, was seinen
                     Triumph über das Heidentum symbolisiert.</p>
-                    <p align="left" id="irland12" key="text13">Diese Sehenswürdigkeiten in Connacht bieten eine faszinierende Mischung aus Geschichte, natürlicher Schönheit und
+                    <p  id="irland12" data-key="text13">Diese Sehenswürdigkeiten in Connacht bieten eine faszinierende Mischung aus Geschichte, natürlicher Schönheit und
                     kultureller Bedeutung und sind ein Muss für jeden Touristen, der diese bezaubernde Region Irlands erkundet!</p>
                 </div>
                 </section>
-                </div>
                 </main>
                 <footer>
                     <div class="footer-container">
@@ -180,22 +183,34 @@
                              aria-label="E-mail"
                              name="email"
                              id="emailInput">
-                            <button class="button-s" id="btn" key="btns">Abonnieren
+                            <button class="button-s" id="btn" data-key="btns">Abonnieren
                         <svg class="svg" width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M1.108 7.617C5.4 5.768 8.262 4.55 9.694 3.961c4.088-1.682 4.938-1.974 5.492-1.984.68-.011.86.551.804 1.137-.221 2.302-1.18 7.887-1.668 10.465-.43 2.277-1.958 1.292-3.338.397-1.296-.84-2.028-1.362-3.286-2.182-1.453-.947-.511-1.467.317-2.318.217-.223 3.984-3.61 4.057-3.918.06-.256-.167-.333-.373-.286-.13.029-2.2 1.382-6.21 4.058-.588.399-1.12.593-1.597.583-.66-.014-2.26-.583-3.88-1.492-.097-.277.399-.53 1.096-.804z"
                                 fill="#FFFFFF"></path>
                         </svg>
                             </button>
-                        </div>
                         </form>
                     </div>
+                        <div class="impressum">
+                            <ul>
+                                <li class="list">
+                                    <a class="a"  id="li2" data-key="li"  href="impressum.html">Impressum</a>
+                                </li>
+                                <li class="list">
+                                    <a class="a" id="id" data-key="li1" href="Datenschutzerklärung.html">Datenschutzerklärung</a>
+                                </li>
+                            </ul>
+                        
+                        </div>
+                        </div>
                 </footer>
+
                 <script src="js/connacht.js"></script>
-</body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
 <script src="./js/menu.js"></script>
+</body>
 </html>

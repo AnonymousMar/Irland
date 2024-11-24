@@ -1,16 +1,12 @@
 :root {
     --title-color: #000000;
-    --typle-color: #5c6afd;
     --while-color: #FFFFFF;
     --typle2-color: #434455;
     --while2-color: #E7E9FC;
     --while3-color: #F4F4FD;
-    --blue-color: #4D5AE5;
     --title2-color: #AFB1B8;
     --title3-color: #8E8F99;
     --title4-color: #E5E5E5;
-    --blue2-color: #404BBF;
-    --green: #31D0AA;
     ----red: red;
     --gray: #757575;
     --orange: #F2943D;
@@ -22,17 +18,49 @@
 body {
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+.list {
+    list-style: none;
+}
+
+ul {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*Header*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFA500;
+    background-color: var(--orange3);
     padding: 20px 20px;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 .logo {
     font-weight: bold;
     font-family: 'Montserrat';
@@ -52,7 +80,6 @@ html {
 .nav-links a {
     text-decoration: none;
     color: rgb(253, 253, 253);
-    /* Adjust the color as needed */
     font-size: 30px;
     font-family: 'Montserrat';
     padding-left: 10px;
@@ -60,34 +87,6 @@ html {
 
 .nav-links a:hover {
     color: var(--title-color);
-}
-.list {
-    list-style: none;
-}
-
-ul {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    padding-left: 0%;
-}
-h1,
-h2,
-h3,
-p {
-    margin-top: 0%;
-    margin-bottom: 0%;
-} 
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-    
-.container {
-     margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;   
 }
     
 .header {
@@ -114,7 +113,7 @@ img {
     height: 720px;
     animation: changing 10s infinite;
 }
-/* 2x screens, retina, 640x480 image */
+/*Fotoschalter*/
 @media (min-resolution: 192dpi) {
     .sol {
         background-image: url("../images/central\ picture\ \(7\).jpg");
@@ -131,6 +130,7 @@ img {
         background-image: url('../images/photo_5192772476734661153_y.jpg');
     }
 }
+/*Beschreibung*/
 .attraction{
     background-color:var(--orange3) ;
     padding-top: 20px;
@@ -195,8 +195,7 @@ p {
     margin-bottom: 10px;
    font-family: 'Montserrat Regular';
    font-size: 24px;
- /*  text-align: justify;
-   padding-left: 35px;*/
+
 }
 
 .title {
@@ -287,22 +286,12 @@ body {
         text-shadow: 0 0 black;
     }
 }
+/*Footer*/
 .footer-div {
     margin-top: 0px;
 }
 
-/*.subscribe {
-    margin-right: auto;
-    margin-bottom: 0px;
-    text-align: left;
-    font-size: 16px;
-    line-height: calc(24/16);
-    color: var(--while-color);
-    text-align: center;
-    margin-left: auto;
-    margin-bottom: 16px;
-      
-}*/
+
 .contact-form {
     display: flex;
     align-items: flex-end;
@@ -543,7 +532,11 @@ body {
     background-color: var(--orange5);
     padding-top: 24px;
 }
-
+.a {
+    text-decoration: none;
+    color: var(--while-color);
+    padding-bottom: 15px;
+}
 .menu-close {
     display: flex;
     align-items: center;
@@ -583,4 +576,7 @@ body {
 }
 .svg {
     margin-left: 5px;
+}
+.a:hover {
+    color: var(--title-color);
 }

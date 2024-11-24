@@ -1,16 +1,13 @@
+/*Farben*/
 :root {
     --title-color: #000000;
-    --typle-color: #5c6afd;
     --while-color: #FFFFFF;
     --typle2-color: #434455;
     --while2-color: #E7E9FC;
     --while3-color: #F4F4FD;
-    --blue-color: #4D5AE5;
     --title2-color: #AFB1B8;
     --title3-color: #8E8F99;
     --title4-color: #E5E5E5;
-    --blue2-color: #404BBF;
-    --green: #31D0AA;
     ----red: red;
     --gray: #757575;
     --orange: #F2943D;
@@ -22,16 +19,46 @@
 body {
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+.list {
+    list-style: none;
+}
+
+ul {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*Header*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFA500;
+    background-color: var(--orange3);
     padding: 20px 20px;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .logo {
@@ -64,36 +91,7 @@ html {
     color: var(--title-color);
 }
 
-.list {
-    list-style: none;
-}
 
-ul {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    padding-left: 0%;
-}
-
-h1,
-h2,
-h3,
-p {
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
 .header {
     background: var(--orange);
@@ -116,7 +114,8 @@ img {
     height: 720px;
     animation: changing 10s infinite;
 }
-/* 2x screens, retina, 640x480 image */
+
+/*Fotoschalter*/
 @media (min-resolution: 192dpi) {
     .sol {
         background-image: url("../images/central\ picture\ \(8\).jpg");
@@ -136,7 +135,7 @@ img {
         background-image: url('../images/Ir.jpg');
     }
 }
-
+/*Beschreibung*/
 .attraction {
     background-color: var(--orange3);
     padding-top: 20px;
@@ -240,7 +239,7 @@ textarea {
 .div {
     margin-right: 120px;
 }
-
+/*Footer*/
 
 footer {
     background-color: var(--orange);
@@ -304,7 +303,7 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/*Schriftart*/
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -358,7 +357,9 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--while-color);
 }
-
+.a:hover {
+    color: var(--title-color);
+}
 .box-icone-a:focus,
 .box-icone-a:hover {
     background-color: var(--orange4);
@@ -477,7 +478,7 @@ body {
             background-color: #f9f9f9;
             cursor: pointer;
 }
-
+/*Menu*/
 .menu-open {
     min-height: 40px;
     display: flex;
@@ -493,7 +494,7 @@ body {
     margin-left: auto;
 }
 
-/*Menu*/
+
 .menu-open {
     min-height: 40px;
     display: flex;
@@ -530,7 +531,11 @@ body {
     background-color: var(--orange5);
     padding-top: 24px;
 }
-
+.a {
+    text-decoration: none;
+    color: var(--while-color);
+    padding-bottom: 15px;
+}
 .menu-close {
     display: flex;
     align-items: center;

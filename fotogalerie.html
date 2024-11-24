@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,18 +18,20 @@
 </head>
 <body>
     <div class="arrow-up">
-        <a href="#"><i class="fas fa-arrow-up"></i></a>
+        <a href="#"><em class="fas fa-arrow-up"></em></a>
     </div>
     <main>
         <header class="header">
             <div class="logo"> <span class="span1">I</span>rland</div>
-            <select class="select" name="laguage" id="laguage">
-                <option value="de">DE</option>
-                <option value="en">EN</option>
+            <label for="laguage">
+            <select class="select"  name="laguage" id="laguage">
+                    <option value="de">DE</option>
+                    <option value="en">EN</option>
             </select>
+        </label>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" id="homepage" key="menu">Startseite</a></li>
+                    <li><a href="index.html" id="homepage" data-key="menu">Startseite</a></li>
                     <li><a href="munster.html">Munster</a></li>
                     <li><a href="connacht.html">Connacht</a></li>
                     <li><a href="ulster.html">Ulster</a></li>
@@ -71,6 +73,8 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
         </header>
         <section class="sol">
             <div class="container"></div>
@@ -79,42 +83,35 @@
             <div class="container">
                 <h2 class="text  ">Fotogalerie</h2>
             </div>
-        </section>
-      <!---<section class="names names1">
-            <div class="container">
-                <h2 class="text  ">Leinster</h2>
-            </div>
-        </section>--->  
+        </section> 
         <div class="container">
             <div class="gallery-pagination"></div>
             <section class="names">
                 <div class="container">
                     <h2 class="text  ">Leinster</h2>
                 </div>
-            </section>
-            </div>
+                </section>
             </div>
             <div class="gallery">   
                 <div class="swiper gallery-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a data-fslightbox="gallery"  class="gallery-link" href="images/College.jpg"><img class="gallery-img" src="images/College.jpg" srcset="images/College.jpg 1x, ./images/College-172x.jpg 2x" 
-                                    alt="College"></a>
+                            <a data-fslightbox="gallery"  class="gallery-link" href="./img/College-3.jpg"><img class="gallery-img" src="./img/College-3.jpg" srcset="img/College-3.jpg 1x, images/College-172x.jpg 2x" alt="College"></a>
                         </div>
                         <div class="swiper-slide">
                             <a data-fslightbox="gallery"  class="gallery-link" href="./images/Kilkenny.jpg"><img  class="gallery-img" src="./images/Kilkenny.jpg" srcset="./images/Kilkenny.jpg 1x, ./images/Kilkenny-172x.jpg 2x"
                             alt="Kilkinny"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a data-fslightbox="gallery" class="gallery-link" href="img/Glendalough 1 (3).jpg"><img class="gallery-img"
-                                    src="img/Glendalough 1 (3).jpg"  srcset="img/Glendalough 1 (3).jpg 1x, ./images/Glendalough172x.jpg 2x"  alt="Glendalough"></a>
+                            <a data-fslightbox="gallery" class="gallery-link" href="img/Glendalough-3.jpg"><img class="gallery-img"
+                                    src="img/Glendalough-3.jpg"  srcset="img/Glendalough-3.jpg 1x, ./images/Glendalough172x.jpg 2x"  alt="Glendalough"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a data-fslightbox="gallery" class="gallery-link" href="img/R (1).jpg"><img class="gallery-img" src="img/R (1).jpg"  alt="Irland"></a>
+                            <a data-fslightbox="gallery" class="gallery-link" href="img/R-1.jpg"><img class="gallery-img" src="img/R-1.jpg"  alt="Irland"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a data-fslightbox="gallery" class="gallery-link" href="img/Castle 1.jpg"><img class="gallery-img" src="img/Castle 1.jpg"
-                                    alt="Castle"></a>
+                            <a data-fslightbox="gallery" class="gallery-link" href="img/Castle1.jpg"><img class="gallery-img" src="img/Castle1.jpg"
+                              srcset="img/Castle1.jpg 1x, ./images/Castle2x.jpg  2x" alt="Castle"></a>
                         </div>
                         <div class="swiper-slide">
                             <a data-fslightbox="gallery" class="gallery-link" href="img/Irland2.jpg"><img class="gallery-img" src="img/Irland2.jpg"  
@@ -125,19 +122,9 @@
                                     src="img/9d9584b0eab1bb601a2f26d2c9aa7c2e.jpg" alt="Hook"></a>
                         </div>
                     </div>
-               <!--- <div class="gallery__navigation">
-                        <button class="gallery__btn gallery__btn-prev">
-                            <svg id="Livello_1" enable-background="new 0 0 64 64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                <path d="m18.5 32 27 27-6.7-27 6.7-27z" />
-                            </svg>
-                        </button>
-                        <button class="gallery__btn gallery__btn-next">
-                            <svg id="Livello_1" enable-background="new 0 0 64 64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                <path d="m45.5 32-27-27 6.7 27-6.7 27z" />
-                            </svg>
-                        </button>
-                    </div>--->    
-                   
+                    <div class="gallery-pagination"></div>
+                </div>  
+                </div>   
             <div class="container">
                 <div class="gallery-pagination"></div>
                 <section class="names">
@@ -151,36 +138,38 @@
                     <div class="swiper gallery-swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a data-fslightbox="gallery" class="gallery-link" href="img/College 2.jpg"><img
-                                        class="gallery-img" src="img/College 2.jpg"  srcset="img/College 2.jpg 1x, ./images/College21x.jpg 2x"  alt="Munster"></a>
+                                <a data-fslightbox="gallery" class="gallery-link" href="img/College2.jpg"><img
+                                        class="gallery-img" src="img/College2.jpg"  srcset="img/College2.jpg 1x, ./images/College21x.jpg 2x"  alt="Munster"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a data-fslightbox="gallery" class="gallery-link" href="img/Kilkenny 2.jpg"><img
-                                        class="gallery-img" src="img/Kilkenny 2.jpg"  srcset="img/Kilkenny 2.jpg 1x, ./images/Kilkenny21x.jpg 2x" alt="Munster"></a>
+                                <a data-fslightbox="gallery" class="gallery-link" href="img/Kilkenny2.jpg"><img
+                                        class="gallery-img" src="img/Kilkenny2.jpg"  srcset="img/Kilkenny2.jpg 1x, ./images/Kilkenny21x.jpg 2x" alt="Munster"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a data-fslightbox="gallery" class="gallery-link" href="img/Glendalough 2.jpg" ><img
-                                        class="gallery-img" src="img/Glendalough 2.jpg" srcset="img/Glendalough 2.jpg 1x, ./images/Glendalough21x.jpg 2x"  alt="Munster"></a>
+                                <a data-fslightbox="gallery" class="gallery-link" href="img/Glendalough2.jpg" ><img
+                                        class="gallery-img" src="img/Glendalough2.jpg" srcset="img/Glendalough2.jpg 1x, ./images/Glendalough21x.jpg 2x"  alt="Munster"></a>
+                                </div>
+                            <div class="swiper-slide">
+                                <a data-fslightbox="gallery" class="gallery-link" href="img/Stone1.jpg"><img class="gallery-img" 
+                                        src="img/Stone1.jpg" srcset="img/Stone1.jpg 1x, ./images/Stone2x.jpg 2x"  alt="Irland"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a data-fslightbox="gallery" class="gallery-link" href="img/Stone 1.jpg"><img class="gallery-img" 
-                                        src="img/Stone 1.jpg" srcset="img/Stone 1.jpg 1x, ./images/Stone 2x.jpg 2x"  alt="Irland"></a>
+                                <a data-fslightbox="gallery" class="gallery-link" href="img/Rock1.jpg"><img class="gallery-img"
+                                        src="img/Rock1.jpg" srcset="img/Rock1.jpg 1x, ./images/Rock2x.jpg 2x"  alt="Castle"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a data-fslightbox="gallery" class="gallery-link" href="img/Rock 1.jpg"><img class="gallery-img"
-                                        src="img/Rock 1.jpg" srcset="img/Rock 1.jpg 1x, ./images/Rock2x.jpg 2x"  alt="Castle"></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a data-fslightbox="gallery" class="gallery-link" href="img/Kerry 1.jpg"><img class="gallery-img"
-                                        src="img/Kerry 1.jpg"  srcset="img/Kerry 1 .jpg 1x, ./images/Kerry2x.jpg 2x"  alt="Leinster"></a>
+                                <a data-fslightbox="gallery" class="gallery-link" href="img/Kerry1.jpg"><img class="gallery-img"
+                                        src="img/Kerry1.jpg"  srcset="img/Kerry1.jpg 1x, ./images/Kerry2x.jpg 2x"  alt="Leinster"></a>
                             </div>
                             <div class="swiper-slide">
                                 <a data-fslightbox="gallery" class="gallery-link"
-                                    href="img/OIP (1).jpg"><img class="gallery-img"
-                                        src="img/OIP (1).jpg" alt="Hook"></a>
+                                    href="img/OIP-1.jpg"><img class="gallery-img"
+                                        src="img/OIP-1.jpg" alt="Hook"></a>
                             </div>
-                        </div>
-                       
+                        </div> 
+                        <div class="gallery-pagination"></div>
+                    </div>
+                    </div>  
                 <div class="container">
                     <div class="gallery-pagination"></div>
                     <section class="names">
@@ -194,52 +183,37 @@
                         <div class="swiper gallery-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a data-fslightbox="gallery" class="gallery-link" href="img/Glendalough 3.jpg"><img
-                                            class="gallery-img" src="img/Glendalough 3.jpg"   srcset="img/Glendalough 3.jpg 1x, ./images/Glendalough2x.jpg 2x"  alt="Connacht"></a>
+                                    <a data-fslightbox="gallery" class="gallery-link" href="img/Glendalough3.jpg"><img
+                                            class="gallery-img" src="img/Glendalough3.jpg"   srcset="img/Glendalough3.jpg 1x, ./images/Glendalough2x.jpg 2x"  alt="Connacht"></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fslightbox="gallery" class="gallery-link" href="img/College 3.jpg"><img
-                                            class="gallery-img" src="img/College 3.jpg"  srcset="img/College 3.jpg 1x, ./images/College2x.jpg 2x"  alt="Connacht"></a>
+                                    <a data-fslightbox="gallery" class="gallery-link" href="img/College3.jpg">
+                                        <img class="gallery-img" src="img/College3.jpg"  srcset="img/College3.jpg 1x, ./images/College2x.jpg 2x"  alt="Connacht"></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fslightbox="gallery" class="gallery-link" href="img/Kilkenny 3.jpg"><img
-                                            class="gallery-img" src="img/Kilkenny 3.jpg"  srcset="img/Kilkenny 3.jpg 1x, ./images/Kilkenny31x.jpg 2x"  alt="Connacht"></a>
+                                    <a data-fslightbox="gallery" class="gallery-link" href="img/Kilkenny-3.jpg"><img class="gallery-img" src="img/Kilkenny-3.jpg"  srcset="img/Kilkenny-3.jpg 1x, ./images/Kilkenny31x.jpg 2x"  alt="Connacht"></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fslightbox="gallery" class="gallery-link" href="img/Abbey 1.jpg"><img class="gallery-img"
-                                            src="img/Abbey 1.jpg"  srcset="img/Abbey 1.jpg 1x, ./images/Abbey2x.jpg 2x"  alt="Connacht"></a>
+                                    <a data-fslightbox="gallery" class="gallery-link" href="img/Abbey1.jpg"><img class="gallery-img"
+                                            src="img/Abbey1.jpg"  srcset="img/Abbey1.jpg 1x, ./images/Abbey2x.jpg 2x"  alt="Connacht"></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fslightbox="gallery" class="gallery-link" href="img/Cliff 1.jpg"><img class="gallery-img"
-                                            src="img/Cliff 1.jpg"  srcset="img/Cliff 1 .jpg 1x, ./images/Cliff2x.jpg 2x"  alt="Connacht"></a>
+                                    <a data-fslightbox="gallery" class="gallery-link" href="img/Cliff1.jpg"><img class="gallery-img"
+                                            src="img/Cliff1.jpg"  srcset="img/Cliff1.jpg 1x, ./images/Cliff2x.jpg 2x"  alt="Connacht"></a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a data-fslightbox="gallery" class="gallery-link" href="img/Croagh 1.jpg"><img class="gallery-img"
-                                            src="img/Croagh 1.jpg"  srcset="img/Croagh 1 .jpg 1x, ./images/Croagh2x.jpg 2x"  alt="Connacht"></a>
+                                    <a data-fslightbox="gallery" class="gallery-link" href="img/Croagh1.jpg"><img class="gallery-img"
+                                            src="img/Croagh1.jpg"  srcset="img/Croagh1.jpg 1x, ./images/Croagh2x.jpg 2x"  alt="Connacht"></a>
                                 </div>
                                 <div class="swiper-slide">
                                     <a data-fslightbox="gallery" class="gallery-link"
                                         href="img/11314679734_671de4bbe8_b.jpg"><img class="gallery-img"
                                             src="img/11314679734_671de4bbe8_b.jpg" alt="Connacht"></a>
                                 </div>
-                           </div>
-                            <!-- <div class="gallery__navigation">
-                                <button class="gallery__btn gallery__btn-prev">
-                                    <svg id="Livello_1" enable-background="new 0 0 64 64" viewBox="0 0 64 64"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="m18.5 32 27 27-6.7-27 6.7-27z" />
-                                    </svg>
-                                </button>
-                                <button class="gallery__btn gallery__btn-next">
-                                    <svg id="Livello_1" enable-background="new 0 0 64 64" viewBox="0 0 64 64"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="m45.5 32-27-27 6.7 27-6.7 27z" />
-                                    </svg>
-                                </button>
-                            </div>-->
-                           
-                           
-                           
+                           </div> 
+                           <div class="gallery-pagination"></div>
+                        </div>     
+                        </div>          
                     <div class="container">
                         <div class="gallery-pagination"></div>
                         <section class="names">
@@ -253,53 +227,38 @@
                             <div class="swiper gallery-swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a data-fslightbox="gallery" class="gallery-link" href="img/Glendalough 4.jpg"><img
-                                                class="gallery-img" src="img/Glendalough 4.jpg"  srcset="img/Glendalough 4.jpg 1x, ./images/Glendalough41x.jpg 2x"  alt="Ulster"></a>
+                                        <a data-fslightbox="gallery" class="gallery-link" href="img/Glendalough4.jpg"><img
+                                                class="gallery-img" src="img/Glendalough4.jpg"  srcset="img/Glendalough4.jpg 1x, ./images/Glendalough41x.jpg 2x"  alt="Ulster"></a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a data-fslightbox="gallery" class="gallery-link" href="img/Kilkenny 4.jpg"><img
-                                                class="gallery-img" src="img/Kilkenny 4.jpg"  srcset="img/Kilkenny 4.jpg 1x, ./images/Kilkenny41x.jpg 2x"  alt="Ulster"></a>
+                                        <a data-fslightbox="gallery" class="gallery-link" href="./img/Kilkenny4.jpg">
+                                            <img class="gallery-img" src="./img/Kilkenny4.jpg"  srcset="./img/Kilkenny4.jpg 1x, ./images/Kilkenny41x.jpg 2x"  alt="Ulster"></a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a data-fslightbox="gallery" class="gallery-link" href="img/College 4.jpg"><img
-                                                class="gallery-img" src="img/College 4.jpg" srcset="img/College 4.jpg 1x, ./images/College41x.jpg 2x"  alt="Ulster"></a>
+                                        <a data-fslightbox="gallery" class="gallery-link" href="img/College4.jpg"><img class="gallery-img" src="img/College4.jpg" srcset="img/College4.jpg 1x, ./images/College41x.jpg 2x"  alt="Ulster"></a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a data-fslightbox="gallery" class="gallery-link" href="img/Giant 1.jpg"><img class="gallery-img"
-                                                src="img/Giant 1.jpg" srcset="img/Giant 1 .jpg 1x, ./images/Giant41x.jpg 2x"  alt="Ulster"></a>
+                                        <a data-fslightbox="gallery" class="gallery-link" href="img/Giant1.jpg"><img class="gallery-img"
+                                                src="img/Giant1.jpg" srcset="img/Giant1.jpg 1x, ./images/Giant41x.jpg 2x"  alt="Ulster"></a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a data-fslightbox="gallery" class="gallery-link" href="img/Delly 1.jpg"><img class="gallery-img"
-                                                src="img/Delly 1.jpg"  srcset="img/Delly 1 .jpg 1x, ./images/Delly2x.jpg 2x"  alt="Ulster"></a>
+                                        <a data-fslightbox="gallery" class="gallery-link" href="./img/Delly-1.jpg"><img class="gallery-img"
+                                                src="img/Delly-1.jpg"  srcset="img/Delly-1.jpg 1x, ./images/Delly2x.jpg 2x"  alt="Ulster"></a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a data-fslightbox="gallery" class="gallery-link" href="img/National 1.jpg"><img class="gallery-img"
-                                                src="img/National 1.jpg"  srcset="img/National 1 .jpg 1x, ./images/National2x.jpg 2x"  alt="Ulster"></a>
+                                        <a data-fslightbox="gallery" class="gallery-link" href="./img/National-1.jpg"><img class="gallery-img"
+                                                src="img/National-1.jpg"  srcset="img/National-1.jpg 1x, ./images/National2x.jpg 2x"  alt="Ulster"></a>
                                     </div>
                                     <div class="swiper-slide">
                                         <a data-fslightbox="gallery" class="gallery-link"
                                             href="img/photo_5192772476734661301_y.jpg"><img class="gallery-img"
                                                 src="img/photo_5192772476734661301_y.jpg" alt="Ulster"></a>
                                     </div>
-                                </div>
-                                <!--- <div class="gallery__navigation">
-                                    <button class="gallery__btn gallery__btn-prev">
-                                        <svg id="Livello_1" enable-background="new 0 0 64 64" viewBox="0 0 64 64"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="m18.5 32 27 27-6.7-27 6.7-27z" />
-                                        </svg>
-                                    </button>
-                                    <button class="gallery__btn gallery__btn-next">
-                                        <svg id="Livello_1" enable-background="new 0 0 64 64" viewBox="0 0 64 64"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="m45.5 32-27-27 6.7 27-6.7 27z" />
-                                        </svg>
-                                    </button>
-                                </div>-->
-                               
+                                </div>                             
                                 <div class="gallery-pagination"></div>
                             </div>
-                        </div>
+                            </div>
+                        
         </main>
         <footer>
             <div class="footer-container">
@@ -345,25 +304,36 @@
                      aria-label="E-mail"
                      name="E-mail"
                      id="emailInput">
-                    <button class="button-s" id="btn" key="btns">Abonnieren
+                    <button class="button-s" id="btn" data-key="btns">Abonnieren
                     <svg  class="svg"  width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M1.108 7.617C5.4 5.768 8.262 4.55 9.694 3.961c4.088-1.682 4.938-1.974 5.492-1.984.68-.011.86.551.804 1.137-.221 2.302-1.18 7.887-1.668 10.465-.43 2.277-1.958 1.292-3.338.397-1.296-.84-2.028-1.362-3.286-2.182-1.453-.947-.511-1.467.317-2.318.217-.223 3.984-3.61 4.057-3.918.06-.256-.167-.333-.373-.286-.13.029-2.2 1.382-6.21 4.058-.588.399-1.12.593-1.597.583-.66-.014-2.26-.583-3.88-1.492-.097-.277.399-.53 1.096-.804z"
                             fill="#FFFFFF"></path>
                     </svg>
                     </button>
-                </div>
                 </form>
+            </div>
+                <div class="impressum">
+                    <ul>
+                        <li class="list">
+                            <a class="a"  id="li2" data-key="li" href="impressum.html">Impressum</a>
+                        </li>
+                        <li class="list">
+                            <a class="a"  id="id" data-key="li1" href="Datenschutzerklärung.html">Datenschutzerklärung</a>
+                        </li>
+                    </ul>
+                
+                </div>
             </div>
         </footer>
         <script src="js/fslightbox.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
         <script src="js/fotogalerie.js"></script>
-</body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
 <script src="./js/menu.js"></script>
+</body>
 </html>
